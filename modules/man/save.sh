@@ -1,0 +1,1 @@
+cat /tmp/SENUM/SSL/log.txt | awk '/USER/ { print "[!]WEB ADDRESS: " substr($10,8,16) "\n[!]SERVER IP  : " $3 "\n[!]USERNAME   : " $6 "\n[!]PASSWORD   : " $8 "\n\n-----------------------------------"}' > log.txt
